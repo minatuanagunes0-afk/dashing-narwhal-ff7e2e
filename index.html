@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6eee8">
+<title>For My Magnolia ♡</title>
+<style>
+  :root {
+    --paper: #fbf6ef; --ink: #453633; --muted: #8d7770;
+    --rose: #b86e76; --blush: #ead0ca; --line: #dfc9bf;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; color: var(--ink); background:
+      radial-gradient(ellipse at 8% 5%, #f0dcd6 0, transparent 30%),
+      radial-gradient(ellipse at 95% 35%, #e8e0d4 0, transparent 26%),
+      var(--paper);
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  .page { width: min(900px, 100%); margin: auto; padding: 22px 18px 60px; }
+  .topline { display:flex; justify-content:space-between; gap:12px; align-items:center; color:var(--muted); font: 11px/1.5 Arial,sans-serif; letter-spacing:.16em; text-transform:uppercase; }
+  .hero { text-align:center; padding: 54px 10px 28px; }
+  .tiny { color:var(--rose); font-size:22px; }
+  h1 { font-size:clamp(42px, 9vw, 76px); line-height:.98; font-weight:400; letter-spacing:-.045em; margin:14px 0; }
+  .subtitle { max-width:460px; margin:16px auto 0; color:var(--muted); font-size:17px; line-height:1.7; }
+  .button { display:inline-block; margin-top:24px; padding:12px 20px; border:1px solid var(--rose); border-radius:30px; background:#fffaf6; color:var(--ink); text-decoration:none; font:12px Arial,sans-serif; letter-spacing:.1em; text-transform:uppercase; transition:.2s; }
+  .button:hover { background:var(--rose); color:white; }
+  .scrapbook { display:grid; grid-template-columns:1fr 1fr; gap:18px; align-items:center; margin:24px auto 44px; max-width:760px; }
+  .photo-card { background:#fffdf9; padding:12px 12px 20px; box-shadow:0 8px 25px #75534a18; transform:rotate(-2deg); }
+  .photo-card img { display:block; width:100%; height:auto; object-fit:cover; }
+  .caption { text-align:center; padding:13px 4px 0; color:var(--muted); font-style:italic; font-size:15px; }
+  .note { position:relative; padding:26px 22px; background:#f1e2d9; transform:rotate(1.5deg); box-shadow:0 8px 25px #75534a12; }
+  .note:before { content:""; position:absolute; width:75px; height:20px; top:-9px; left:calc(50% - 37px); background:#d8aaa4a8; transform:rotate(-3deg); }
+  .note .label { font:10px Arial,sans-serif; letter-spacing:.18em; text-transform:uppercase; color:var(--rose); }
+  .note p { font-size:clamp(17px,2.8vw,21px); line-height:1.7; margin:16px 0 0; }
+  .divider { display:flex; align-items:center; gap:12px; color:var(--rose); margin:40px auto; max-width:450px; }
+  .divider:before,.divider:after { content:""; height:1px; background:var(--line); flex:1; }
+  .letter { max-width:650px; margin:0 auto; padding:0 10px; }
+  .eyebrow { text-align:center; color:var(--rose); font:11px Arial,sans-serif; text-transform:uppercase; letter-spacing:.2em; }
+  h2 { text-align:center; font-size:clamp(30px,6vw,46px); font-weight:400; margin:13px 0 24px; }
+  .letter p { font-size:18px; line-height:1.95; color:#5d4944; }
+  .signature { text-align:right; font-style:italic; color:var(--rose); font-size:23px; margin-top:26px; }
+  .memory { margin:48px auto 0; max-width:620px; text-align:center; border:1px dashed #cda9a1; padding:25px 20px; border-radius:4px; }
+  .memory h3 { font-size:25px; font-weight:400; margin:0 0 12px; }
+  .memory p { color:var(--muted); line-height:1.8; margin:0; }
+  footer { text-align:center; margin-top:44px; color:var(--muted); font:11px Arial,sans-serif; letter-spacing:.12em; }
+  .heart { display:inline-block; animation: pulse 1.7s infinite; color:var(--rose); }
+  @keyframes pulse { 50% { transform:scale(1.18); } }
+  @media(max-width:620px) {
+    .page { padding:18px 14px 42px; }
+    .hero { padding-top:43px; }
+    .scrapbook { grid-template-columns:1fr; max-width:430px; gap:26px; }
+    .photo-card { width:92%; margin:auto; }
+    .note { width:94%; margin:auto; }
+    .letter p { font-size:17px; }
+  }
+  @media(prefers-reduced-motion:reduce) { html {scroll-behavior:auto} .heart {animation:none} }
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="topline"><span>a little piece of us</span><span>made with love ♡</span></div>
+  <header class="hero">
+    <div class="tiny">✧ ♡ ✧</div>
+    <h1>Happy Birthday,<br><em>my magnolia.</em></h1>
+    <p class="subtitle">Somewhere among all the days I have lived, there is a quiet little chapter that began with you—and I hope it never stops unfolding.</p>
+    <a class="button" href="#letter">Open your little letter ↓</a>
+  </header>
+
+  <section class="scrapbook" aria-label="Our photo and a little note">
+    <figure class="photo-card">
+      <img src="our-photo.jpg" alt="A photo of us together">
+      <figcaption class="caption">one of my favorite little memories ♡</figcaption>
+    </figure>
+    <aside class="note">
+      <div class="label">a note for you</div>
+      <p>My magnolia, if memories were flowers, I would keep every small moment with you pressed between the pages of my favorite book.</p>
+      <p style="text-align:right;color:#b86e76">— yours, in this little chapter</p>
+    </aside>
+  </section>
+
+  <div class="divider">✧ <span class="heart">♥</span> ✧</div>
+
+  <section class="letter" id="letter">
+    <div class="eyebrow">to the person who makes my world softer</div>
+    <h2>A birthday letter</h2>
+    <p>Happy birthday, my magnolia.</p>
+    <p>Sometimes I wonder how a person can arrive so quietly and still change the shape of so many ordinary days. Then I think of you, and I understand a little more. You became a favorite thought, a familiar warmth, a name that can turn an ordinary moment into a memory I want to keep.</p>
+    <p>If our time together were a scrapbook, I would save the smallest things: the silly faces, the unplanned laughs, the moments when neither of us needed to say much at all. I would keep them beside the photographs, like little pressed flowers—proof that something beautiful once happened here, and is still happening.</p>
+    <p>I know a photograph can only hold one second. It cannot keep the sound of a laugh, the feeling of being understood, or all the words that stayed in our hearts instead of reaching our lips. But when I look at our picture, I see more than a picture. I see a tiny doorway back to a moment that belongs to us.</p>
+    <p>My magnolia, I hope this new year of your life is gentle with you. I hope it brings you mornings that feel full of possibility, dreams that grow braver with time, and people who remind you how precious your heart is. I hope you learn to see in yourself the good that others are lucky enough to notice in you.</p>
+    <p>And if one day we look back at these years from far away, I hope we remember them kindly: not because every moment was perfect, but because they were real. Because somewhere in the middle of growing up and figuring life out, we found little reasons to smile, stories to tell, and memories that became ours.</p>
+    <p>I cannot ask time to stand still—not even for the moments I wish I could keep forever. But I can be grateful that they happened. I can hold them carefully, like petals between the pages of a book, and carry their softness with me.</p>
+    <p>So today, I celebrate you: your past, your becoming, and every unwritten page waiting ahead. Thank you for being part of my story. If life is a garden full of seasons, I hope this year lets you bloom in ways you have only dreamed of.</p>
+    <p class="signature">Happy birthday, my magnolia.<br>May life always leave room for you to bloom. ♡</p>
+  </section>
+
+  <section class="memory">
+    <h3>One more thing…</h3>
+    <p>If I could tuck one thing into the pages of this little website, it would be a promise to remember the small things: our faces in this photo, the laughter behind it, and all the ordinary seconds that became precious simply because we shared them.</p>
+  </section>
+
+  <footer>FOR MY MAGNOLIA, WITH LOVE · <span class="heart">♥</span></footer>
+</main>
+</body>
+</html>
